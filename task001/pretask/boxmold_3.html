@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>boxmold</title>
+    <style type="text/css">
+        .box{
+            padding-left:300px;
+        }
+        .diva{
+            width:100px;
+            height: 30px;
+            background-color: red;
+            float: left;
+            position: relative;
+        }
+        .divb{
+            float: left;
+            width:300px;
+            height: 30px;
+            background-color: blue;
+            position: relative;
+            left:-300px;
+            margin-left: -100%;
+        }
+    </style>
+</head>
+<body>
+<p>用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化 </p>
+<div class="box">
+    <div class="diva">DIV-A</div>
+    <div class="divb">DIV-B</div>
+</div>
+</body>
+</html>
