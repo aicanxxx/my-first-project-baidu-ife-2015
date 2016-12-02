@@ -1,1 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+a{
+    text-decoration: none;
+    font-family: "宋体","微软雅黑",sans-serif;
+    font-size:14px;
+    color:white;
+}
+.header{
+    width:100%;
+    height: 80px;
+    background-color: #522a5c;
+    position: relative;
+}
+.header-main{
+    width: 980px;
+    height: 80px;
+    margin:0 auto;
+    position: relative;
+    background-color: #522a5c;
+}
+.logo,.menu{
+    position: relative;
+    top:50px;
+}
 
+.menu li{
+    float: left;
+    list-style: none;
+    margin-left:28px;
+}
+.git-logo{
+    position: absolute;
+    right:10px;
+    bottom:0;
+}
+.banner{
+    min-width:980px;
+    height:526px;
+    background: url("../images/banner-bg.jpg");
+    background-size: 100% 100%;
+}
+.context-wp{
+    width: 980px;
+    height:100%;
+    margin:0 auto;
+    position: relative;
+}
+.context{
+    width:360px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding:10px 10px 30px 10px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0) 100%);
+    font-family: "宋体", "微软雅黑", sans-serif;
+    color: #ffffff;
+}
+.context p{
+    font-size:12px;
+    line-height:150%;
+    text-indent: 24px;
+}
+.context span{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: right;
+}
