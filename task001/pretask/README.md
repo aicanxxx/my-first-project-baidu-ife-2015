@@ -20,7 +20,7 @@
   </br>
 - 对应boxmold3.html文件  
   </br>
-- **过程**：定义divA与divB，本题的主要思想就是使divA脱离文档流，而脱离文档流有两种常见的方法，1是使用position绝对定位，即父级div定义position：relative，并使用margin-left：100px,使左边空出100px的宽度，在diva中定义position：absolute，即相对于父级div绝对定位，并使用left：-100px,使得diva脱离文档流，divb则定义宽度为100%即可实现咋定义，2是使用浮动，与前一个方法类似。
+- **过程**：定义divA与divB，本题的主要思想就是使divA脱离文档流，而脱离文档流有两种常见的方法，1是使用position绝对定位，即父级div定义position：relative，并使用margin-left：100px,使左边空出100px的宽度，在diva中定义position：absolute，即相对于父级div绝对定位，并使用left：-100px,使得diva脱离文档流，divb则定义宽度为100%即可实现定义，2是使用浮动，与前一个方法类似。
 </br>
 </br>
 
