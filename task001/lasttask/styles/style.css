@@ -7,25 +7,15 @@ body{
     min-width: 980px;
     background-color: #eee;
 }
-.wrap{
-    width:980px;
-    margin:0 auto;
-}
-.f_left{
-    float: left;
-}
-.f_right{
-    float: right;
-}
 a{
     text-decoration: none;
     font-family: "宋体","微软雅黑",sans-serif;
-    font-size:14px;
     color:white;
 }
 a:hover{
     color: #eaa;
 }
+/*header*/
 .header{
     background-color: #522a5c;
     height: 80px;
@@ -36,182 +26,65 @@ a:hover{
     right:10px;
     bottom:0;
 }
-.logo{
-
-}
-/*index*/
-
-
-
-
-
-/*.header{
-    width:100%;
-    height: 80px;
-    background-color: #522a5c;
-    position: relative;
-}
 .header-main{
-    width: 980px;
+    width:980px;
     height:100%;
     margin:0 auto;
-    position: relative;
-    background-color: #522a5c;
-}
-.logo,.menu{
-    position: relative;
-    top:50px;
-}
+    position: relative;/*使wrap与icon-github都是使用position定位，可以通过div出现的前后位置进行覆盖*/
+    background-color: inherit; /*wrap的颜色是透明的，覆盖不住icon-github，故需设置和背景一样的颜色进行覆盖*/
 
-.menu li{
-    float: left;
-    list-style: none;
-    margin-left:28px;
 }
-.git-logo{
+.logo{
     position: absolute;
-    right:10px;
-    bottom:0;
+    top:50px;
+    left:0;
 }
-.banner{
-    min-width:980px;
-    height:525px;
-    background: url("../images/banner-bg.jpg");
-    background-size: 100% 100%;
-}
-.banner-main{
-    width: 980px;
-    height:100%;
-    margin:0 auto;
-    position: relative;
-}
-.context{
-    width:360px;
+.menu{
     position: absolute;
-    bottom:0;
+    top:50px;
     right:0;
-    padding:10px 10px 30px 10px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 25%, rgba(255, 255, 255, 0) 100%);
-    font-family: "宋体", "微软雅黑", sans-serif;
-    color: #ffffff;
 }
-.context p{
-    font-size:12px;
-    line-height:150%;
-    text-indent: 24px;
+.menu li{
+    display: inline;
+    margin-left: 28px;
 }
-.context span{
-    display: block;
+.menu li a{
     font-size: 14px;
-    margin-bottom: 12px;
-    text-align: right;
 }
-.center{
-    width: 980px;
-    margin:10px auto 100px auto;
-    overflow: hidden;
-}
-.col{
-    width:320px;
-    background-color: #fff;
-    margin-right: 10px;
-    padding-bottom: 999px;
-    margin-bottom: -999px;
-}
-.clear_margin{
-    margin-right:0;
-}
-.col-img{
-    width:300px;
-    height:180px;
-    margin:10px 10px 15px 10px;
-}
-.col-img img{
-    width: 300px;
-    height: 180px;
-}
-.img-context{
-    margin:0 30px 25px 30px;
-}
-.img-context p{
-    font-size:12px;
-    line-height:170%;
-    text-indent: 24px;
-    color: #000;
-    font-family: "宋体", "微软雅黑", sans-serif;
-}
-.author{
-    min-width:980px;
-    height:400px;
-    background-color: white;
-    padding-top: 1px;
-}
-.author-photo{
-    width: 160px;
-    height:160px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -51px;
-    margin-left: 50%;
-    position:relative;
-    left:-80px;
-}
-.author-photo img{
-    width:160px;
-    height:160px;
-}
-.author-intro{
-    width: 600px;
-    margin:50px auto 0 auto;
-}
-.author-intro span{
-    display: block;
-    font-size: 20px;
-    font-family: "Century Gothic",sans-serif;
-    text-align: center;
-    margin-bottom: 40px;
-}
-.author-intro p{
-    font-size: 14px;
-    text-indent: 28px;
-    line-height: 170%;
-}
+/*footer*/
 .footer{
-    min-width: 980px;
     background-color: black;
-    position: relative;
 }
 .footer a{
     font-size: 12px;
 }
+.footer span{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+}
 .footer-menu{
     height:35px;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #333;
     text-align: center;
-    margin-bottom: 40px;
+}
+.footer-menu li{
+    display: inline;
+    margin:0 14px;
+    line-height: 35px;
 }
 
-.footer-menu li{
-    display:inline;
-    list-style: none;
-    line-height: 35px;
-    margin:0 14px;
-}
 .footer-links{
-    width: 980px;
-    height:250px;
-    margin: 0 auto;
-    overflow: hidden;
+    width:980px;
+    height:300px;
+    margin:0 auto;
 }
 .links{
     float: left;
     width:20%;
 }
 .links span{
-    color: white;
-    font-size: 12px;
-    display: block;
-    margin-bottom: 30px;
+    margin:40px 0 30px 0;
 }
 .links li{
     margin-bottom: 5px;
@@ -219,12 +92,111 @@ a:hover{
 .copyright{
     text-align: center;
 }
-.copyright span{
-    display: block;
-    color: white;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
 .copyright-img{
+    margin-top:20px;
     height:34px;
-}*/
+}
+/*index*/
+
+/*banner*/
+.banner{
+    height:550px;
+    background-image: url("../images/banner-bg.jpg");
+    background-size: 100% 100%;
+}
+.banner-main{
+    width:980px;
+    height:100%;
+    margin:0 auto;
+    position: relative;
+}
+.context{
+    width: 360px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    padding:10px 10px 30px 10px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+}
+.context span{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom:12px;
+    text-align: right;
+}
+.context p{
+    text-indent: 24px;
+    line-height: 150%;
+    font-size: 12px;
+    color: #ffffff;
+}
+/*center*/
+.center{
+    width:980px;
+    margin: 10px auto 100px auto;
+    overflow: hidden;
+}
+.col{
+    float: left;
+    width:320px;
+    margin-right: 10px;
+    background-color: white;
+    padding-bottom:999px;/*使三个div的高度相同并且自适应*/
+    margin-bottom: -999px;
+}
+.clear_margin{
+    margin-right: 0;
+}
+.col-img{
+    width: 300px;
+    height:180px;
+    margin:10px 10px 15px 10px;
+}
+.col-img img{
+    width:300px;
+    height:180px;
+}
+.img-context{
+    padding: 0 30px 25px 30px;
+}
+.img-context p{
+    text-indent: 24px;
+    line-height: 170%;
+    font-size: 12px;
+}
+/*author*/
+.author{
+    height:400px;
+    background-color: white;
+    padding-top: 1px;/*使两个垂直外边距不要合并*/
+}
+.author-img{
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:-51px auto 50px auto;
+}
+.author-img img{
+    width:160px;
+    height:160px;
+}
+.author-intro{
+    width: 600px;
+    margin:0 auto;
+    font-family: "Century Gothic",sans-serif;
+}
+.author-intro span{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.author-intro p{
+    text-indent: 28px;
+    line-height: 170%;
+    font-size: 14px;
+}
+
+
