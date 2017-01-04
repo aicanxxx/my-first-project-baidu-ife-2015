@@ -199,6 +199,9 @@ a:hover{
     font-size: 14px;
 }
 /*blog*/
+.clear-float{
+    clear: both;
+}
 .container{
     width:980px;
     margin:20px auto 300px auto;

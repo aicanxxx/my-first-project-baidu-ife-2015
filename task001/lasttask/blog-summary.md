@@ -2,3 +2,6 @@
 
 准备写blog.html的时候，发现header部分和footer部分是一样的，并没有什么变化，就准备先重写index.html，将header部分和footer部分作为公共部分。
 
+1.对于container部分，子元素blog-center和blog-aside两部分要并列显示，使用了float：left,但是此时脱离了文档流导致container部分的高度为0，那下面footer部分会被blog-center和blog-aside覆盖，故要让container部分的高度被其子元素撑开，有一种方式是在container部分加上overflow：hidden,
+
+但是由于子div中的元素要求使用绝对定位在container的外边，故会被隐藏，行不通，另一种方法就是在container部分后面添加一个子div，只用来clear：both,这样就不会隐藏子div，也使container部分有了高度，不会覆盖footer部分。
