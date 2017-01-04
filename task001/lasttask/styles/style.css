@@ -204,13 +204,13 @@ a:hover{
     margin:20px auto 300px auto;
 }
 .blog-center{
-
+    float: left;
     width:710px;
     background-color: white;
     margin-right: 10px;
 }
 .blog-aside{
-
+    float: left;
     background-color: white;
     width: 260px;
 }
