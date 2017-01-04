@@ -199,6 +199,8 @@ a:hover{
     font-size: 14px;
 }
 /*blog*/
+
+/*blog-center*/
 .clear-float{/*使container高度被子div撑开*/
     clear: both;
 }
@@ -213,9 +215,9 @@ a:hover{
 }
 .blog-aside{
     float: left;
-    background-color: white;
     width: 260px;
 }
+/*blog*/
 .blog{
     padding: 20px 20px 15px 20px;
     margin-bottom:10px;
@@ -266,6 +268,39 @@ a:hover{
     color: #999;
     font-size:12px;
 }
+/*number-list*/
 .number-list{
+    text-align: center;
+}
+.number-list li{
+    display: inline-block;
+    height:40px;
+    line-height: 40px;
+    background-color: white;
+    padding:0 15px;
+}
+.number-list a{
+    color: black;
+    font-size:12px;
+}
+.number-list li:hover ,li:hover a{/*使鼠标覆盖之后呈现加粗的紫色底白字*/
+    font-weight: bold;
+    color: #fff;
+    background-color:#a660b7;
+}
+.disabled{
+    pointer-events: none;/*使鼠标处于无法点击状态*/
+}
+.disabled a{
+    color: darkgrey;
+}
 
+/*blog-aside*/
+.blog-search{
+    background-color: white;
+    padding: 20px;
+}
+.blog-search form{
+    width:220px;
+    height:40px;
 }
