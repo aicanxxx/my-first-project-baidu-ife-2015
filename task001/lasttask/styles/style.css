@@ -283,7 +283,7 @@ a:hover{
     color: black;
     font-size:12px;
 }
-.number-list li:hover ,li:hover a{/*使鼠标覆盖之后呈现加粗的紫色底白字*/
+.number-list li:hover ,.number-list li:hover a{/*使鼠标覆盖之后呈现加粗的紫色底白字*/
     font-weight: bold;
     color: #fff;
     background-color:#a660b7;
@@ -299,8 +299,40 @@ a:hover{
 .blog-search{
     background-color: white;
     padding: 20px;
+    font-size: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
-.blog-search form{
-    width:220px;
-    height:40px;
+#input-search {
+    float: left;
+    border: solid 1px #ddd;
+    color: #ddd;
+    width:118px;
+    padding:12px 0 12px 50px;
+    background:url("../images/search.gif") no-repeat 8px ;
 }
+#input-button {
+    float: left;
+    width:50px;
+    height:41px;
+    border: solid 1px #ddd;
+    font-size: 24px;
+    color: #fff;
+}
+
+.blog-submenu li{
+    list-style: none;
+    height:50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: solid 1px #ddd;
+    border-left: solid 5px #dfc6e6;
+    background-color: white;
+}
+.blog-submenu li:hover,{
+    border-left:solid 5px #522a5c;
+}
+.blog-submenu li a{
+    color: #666666;
+}
+
