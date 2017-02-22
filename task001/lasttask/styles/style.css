@@ -132,7 +132,7 @@ a:hover{
     color: #ffffff;
 }
 /*center*/
-.center{
+.index-center{
     width:980px;
     margin: 10px auto 100px auto;
     overflow: hidden;
@@ -208,12 +208,12 @@ a:hover{
     width:980px;
     margin:20px auto 300px auto;
 }
-.blog-center{
+.center{
     float: left;
     width:710px;
     margin-right: 10px;
 }
-.blog-aside{
+.aside{
     float: left;
     width: 260px;
 }
@@ -291,15 +291,15 @@ a:hover{
 .disabled{
     pointer-events: none;/*使鼠标处于无法点击状态*/
 }
+
 .disabled a{
     color: darkgrey;
 }
 
 /*blog-aside*/
-.blog-search{
+.search{
     background-color: white;
     padding: 20px;
-    font-size: 0;
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -329,10 +329,195 @@ a:hover{
     border-left: solid 5px #dfc6e6;
     background-color: white;
 }
-.blog-submenu li:hover,{
+.blog-submenu li:hover{
     border-left:solid 5px #522a5c;
 }
 .blog-submenu li a{
     color: #666666;
 }
 
+/*blog-calendar*/
+.blog-calendar{
+    background-color: white;
+    padding:20px 20px 25px 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.calendar-month li{
+    list-style: none;
+    float: left;
+    height:20px;
+    line-height: 20px;
+    padding: 0 15px;
+}
+.calendar-month li a{
+    color: #773c88;
+    font-size:12px;
+    font-weight: bold;
+}
+#month{
+    padding:0 51px;
+}
+.calendar-data{
+    padding: 0 15px;
+    overflow: hidden;
+    border-bottom: solid 1px #ddd;
+}
+.calendar-data li{
+    list-style: none;
+    float: left;
+    height:20px;
+    line-height: 20px;
+    width:21px;
+    text-align: center;
+    margin: 7px 3px ;
+}
+.calendar-data li a{
+    color: #999;
+    font-size:12px;
+}
+.calendar-data li:hover{
+    background-color: #773c88;
+}
+
+/*tags*/
+.tags{
+    background-color: white;
+    padding: 10px 20px 30px 15px;
+    color: #773c88;
+}
+.tags-header{
+    display: block;
+    color: #666666;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+.tags-30px{
+    font-size: 30px;
+    font-weight: 500;
+    padding-right: 8px;
+}
+.tags-20px{
+    font-size: 20px;
+    font-weight: 500;
+}
+.tags-10px{
+    font-size: 10px;
+}
+.tags-14px{
+    font-size: 14px;
+}
+
+/*gallery*/
+.gallery-tab,.gallery-container{
+    overflow: hidden;
+}
+.gallery-tab li{
+    background-color: white;
+    float: left;
+    list-style: none;
+    padding:15px 20px 20px 20px;
+    border-right: solid 2px #eeeeee;
+    border-bottom: solid 2px #eeeeee;
+    cursor: pointer;
+}
+.gallery-tab a{
+    font-size: 14px;
+    color: black;
+}
+.tab1{
+    border-top: solid 5px #dfc6e6;
+}
+.tab2 {
+    border-top: solid 5px #522a5c;
+}
+.tab3 {
+    border-top: solid 5px #5900b2;
+}
+.tab4{
+    border-top: solid 5px #8c2300;
+}
+.tab5{
+    border-top: solid 5px #d9a300;
+}
+.gallery-tab li:hover{
+    border-bottom-color: white;/*设置为border-bottom：none没有反应，只能设置为背景色*/
+}
+/*center*/
+.gallery{
+    background-color: white;
+    margin-bottom: 10px;
+    padding:20px 20px 30px 20px;
+    overflow: hidden;
+}
+.gallery-left{
+    width: 330px;
+    float: left;
+    margin-right: 10px;
+}
+.gallery-right{
+    width: 330px;
+    float: left;
+}
+.big-img{
+    width:330px;
+    height:150px;
+}
+.big-img-text{
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 10px;
+}
+.pic-code{
+    float: left;
+    color: white;
+    border: solid 1px white;
+    padding: 5px;
+    border-radius:10px;
+}
+.styleJ{
+    background-color: #522a5c;
+
+}
+
+.styleA{
+    background-color: #d9a300;
+
+}
+.styleF{
+    background-color: #8c2300;
+
+}
+.styleU{
+    background-color: #5900b2;
+
+}
+
+
+
+
+
+
+
+/*.part1{
+    float: left;
+    margin-right: 10px;
+    width: 330px;
+}
+.part2{
+    float: left;
+    margin-right: 10px;
+    width: 160px;
+}
+.part3{
+    float: left;
+    width: 160px;
+}
+.gallery img{
+
+}
+
+
+.part1-bottom{
+
+}*/
