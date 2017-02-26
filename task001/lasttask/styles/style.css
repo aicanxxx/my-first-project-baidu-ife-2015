@@ -412,6 +412,7 @@ a:hover{
 /*gallery*/
 .gallery-tab,.gallery-container{
     overflow: hidden;
+    font-family: "宋体","微软雅黑",sans-serif;
 }
 .gallery-tab li{
     background-color: white;
@@ -450,6 +451,8 @@ a:hover{
     margin-bottom: 10px;
     padding:20px 20px 30px 20px;
     overflow: hidden;
+    color: white;
+    font-size: 14px;
 }
 .gallery-left{
     width: 330px;
@@ -461,63 +464,215 @@ a:hover{
     float: left;
 }
 .big-img{
-    width:330px;
+    width:330px;/*没有设置div的宽高时，div自动的高度与图片之间只有5px的高度差*/
     height:150px;
 }
-.big-img-text{
+.small-img{
+    width: 160px;
+    height: 100px;
+}
+.big-img-text,.small-img-text{
     padding: 10px 10px 20px 10px;
     margin-bottom: 10px;
 }
 .pic-code{
     float: left;
-    color: white;
     border: solid 1px white;
-    padding: 5px;
-    border-radius:10px;
+    width: 25px;/*用padding的时候边框不能变成圆的，始终是椭圆*/
+    height: 25px;
+    text-align: center;/*让文字水平垂直居中*/
+    line-height: 25px;
+    border-radius:100%;/*边框属性为圆形*/
+}
+.pic-title{
+    margin-left: 45px;
+}
+.pic-content{
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 150%;
+    margin-left: 45px;
+}
+
+.part-branch-left{
+    float: left;
+    width:160px;
+    margin-right: 10px;
+}
+.part-branch-right{
+    float: left;
+    width:160px;
 }
 .styleJ{
     background-color: #522a5c;
-
 }
-
 .styleA{
     background-color: #d9a300;
-
 }
 .styleF{
     background-color: #8c2300;
-
 }
 .styleU{
     background-color: #5900b2;
-
 }
 
 
+/*More*/
+.click-more{
+    height:50px;
+    background-color: white;
+    line-height:50px;
+    text-align: center;
 
+}
+.more{
+    height:50px;
+    display: block;
+    background: url("../images/more.jpg") no-repeat  310px center;
+}
+.more a{
+    color: #666;
+    font-size: 12px;
+    margin-left: 40px;
+}
 
-
-
-
-/*.part1{
+/*ranking*/
+.ranking{
+    background-color: white;
+    padding: 20px 0px 30px 15px;
+}
+.ranking p{
+    padding-bottom: 20px;
+}
+.ranking li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+.ranking-number{
     float: left;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    color: #fff;
+    border: solid 1px #7d5f84;
+    border-radius: 100%;
+    background-color: #7d5f84;
+    margin-right:10px ;
+}
+.ranking-bar{
+    float: left;
+    width: 102px;
+    height: 18px;
     margin-right: 10px;
-    width: 330px;
 }
-.part2{
+.bar-1{
+    background: url("../images/bar-1.jpg") no-repeat;
+}
+.bar-2{
+    background: url("../images/bar-2.jpg") no-repeat;
+}
+.bar-3{
+    background: url("../images/bar-3.gif") no-repeat;
+}
+.bar-4{
+    background: url("../images/bar-4.gif") no-repeat;
+}
+.bar-5{
+    background: url("../images/bar-5.jpg") no-repeat;
+}
+
+
+/*about*/
+.about-center{
+    width: 980px;
+    margin: 100px auto 20px auto;
+    position: relative;
+    font-family: "宋体","微软雅黑",sans-serif;
+}
+.about-left{
     float: left;
-    margin-right: 10px;
-    width: 160px;
+    width: 90px;
+    height:1200px;
+    background-color: white;
+    margin-right: 6px;
+    padding: 0 77px 0 320px;
+    text-align: right;
+    font-size: 20px;
 }
-.part3{
+.about-right{
     float: left;
-    width: 160px;
+    width: 315px;
+    height:1200px;
+    background-color: white;
+    padding: 0 147px 0 25px;
+    font-size: 14px;
+    line-height: 170%;
 }
-.gallery img{
+.author-name{
+    padding: 130px 0 240px 0;
+}
+.edu-experience{
+    padding: 210px 0 310px 0;
+}
+.introduce{
+    text-indent: 28px;
+    padding: 130px 0 145px 0;
+}
+.intro1{
+    padding: 156px 0 0 30px;
+    position: relative;
+}
+.intro2{
+    padding: 50px 0 0 30px;
+    position: relative;
+}
+.intro3{
+    padding: 30px 0 0 30px;
+    position: relative;
+}
 
+.edu-time,.job-time{
+    padding: 1px 15px;
+    border:solid 5px #eee;
+    border-radius: 20%;
+    color: #666;
+    position: absolute;
+    left:-61px;
+    background-color: white;
+}
+.about-right span{
+    font-size: 12px;
 }
 
 
-.part1-bottom{
-
-}*/
+.timeline{
+    width: 180px;
+    position: absolute;
+    top:-60px;
+    left: 400px;
+}
+.about-author-img{
+    width:160px;
+    height:160px;
+    border:solid 10px #eee;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-setting{
+    border:solid 5px #eee;
+    border-radius: 50%;
+    overflow: hidden;
+    width:80px;
+    height:80px;
+}
+.tel-img{
+    margin: 170px auto 140px auto;
+}
+.edu-img{
+    margin: 0 auto;
+}
+.job-img{
+    margin: 240px auto 240px auto;
+}
